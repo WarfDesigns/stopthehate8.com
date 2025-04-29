@@ -4,6 +4,6 @@ document.addEventListener('DOMContentLoaded', () =>{
     const imageCount = 10;
     for (let i = 1; i <= imageCount; i++) {
         const img = document.createElement('img');
-        img.src = `${img}image${i}.jpg`;
+        img.src = `${img}image${i}.webp`;
     }
 });
