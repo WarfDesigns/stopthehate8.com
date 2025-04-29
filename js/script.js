@@ -1,6 +1,7 @@
-onclick( "btn", function() {
-    var input = document.getElementById("input").value;
-    var output = document.getElementById("output");
-    var result = eval(input);
-    output.innerHTML = result;
-}
+document.addEventListener('DOMContentLoaded', () =>{
+    const column = document.querySelectorAll('.column');
+    const imageFolder = '../img/';
+    const imageCount = 10;
+    for (let i = 1; i <= imageCount; i++) {
+        const img = document.createElement('img');
+        img.src = `${img}image${i}.jpg`;
