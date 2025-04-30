@@ -13,5 +13,5 @@ index = (index + 1) % slideCount;
 goToSlide(index);
     // for debugging, open your console and uncomment:
     // console.log('auto-advance to slide', index);
-  }, 4000);
+  }, 10000);
 });

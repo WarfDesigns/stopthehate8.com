@@ -10,7 +10,7 @@
     display: flex;
     height: 100%;
     /* this is what makes the movement smooth */
-    transition: transform 1.6s ease-in-out;
+    transition: transform 4.6s ease-in-out;
     will-change: transform;
   }
   
@@ -19,6 +19,7 @@
   .slide {
     flex: 0 0 100%;         /* one slide per view */
     height: 100%;
+    
   }
   
   .slide img {
@@ -29,6 +30,7 @@
   
   /* the fixed overlay */
   .overlay {
+    display: grid;
     position: absolute;
     top: 50%;               /* center vertically */
     left: 50%;              /* center horizontally */
@@ -36,7 +38,8 @@
     z-index: 10;            /* sit above all slides */
     text-align: center;
     color: white;
-    pointer-events: none;   /* clicks go through to controls if any */
+    pointer-events: none;
+    /* clicks go through to controls if any */
     /* optional background for readability: */
     /* background: rgba(0,0,0,0.5); padding: 1rem; border-radius: 0.5rem; */
   }
