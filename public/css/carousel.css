@@ -1,55 +1,43 @@
 .carousel {
-    display: flex;
-    overflow-x: auto;                     
-    scroll-snap-type: x mandatory;         
-    scroll-behavior: smooth;              
-    -webkit-overflow-scrolling: touch;     
-    margin: 0;
-    padding: 0;
-    animation: slide-animation 12s ease-in-out infinite;
-}
-.carousel::-webkit-scrollbar {
-    display: none;
-}
-.carousel .slide {
     position: relative;
-    flex: 0 0 100vw;                      
-    height: 60vh;                         
-    scroll-snap-align: start;             
-}
-.carousel .slide img {
+    overflow: hidden;       /* keep everything clipped to the carousel box */
+    width: 100%;
+    height: 400px;          /* or whatever height you need */
+  }
+  
+  /* this wrapper is what you slide left/right in JS or via CSS animation */
+  .slides-wrapper {
+    display: flex;
+    height: 100%;
+    /* this is what makes the movement smooth */
+    transition: transform 0.6s ease-in-out;
+    will-change: transform;
+  }
+  
+  
+  /* each slide fills the carousel box */
+  .slide {
+    flex: 0 0 100%;         /* one slide per view */
+    height: 100%;
+  }
+  
+  .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
-    user-select: none;                     
-    pointer-events: none;                  
-}
-.carousel .slide .overlay {
+  }
+  
+  /* the fixed overlay */
+  .overlay {
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 2rem;
-    background: rgba(0,0,0,0.4);           /* semi-transparent black */
-    color: #fff;
-    box-sizing: border-box;
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    box-shadow: inset 0 2px 15px rgba(0, 0, 0, 0.3);
-    padding: 5rem 0 5rem;
-}
-.carousel .slide .overlay h2 {
-    margin: 0 0 0.5rem;
-    font-size: 2rem;
-}
-.carousel .slide .overlay p {
-    margin: 0;
-    font-size: 1.1rem;
-}
+    top: 50%;               /* center vertically */
+    left: 50%;              /* center horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 10;            /* sit above all slides */
+    text-align: center;
+    color: white;
+    pointer-events: none;   /* clicks go through to controls if any */
+    /* optional background for readability: */
+    /* background: rgba(0,0,0,0.5); padding: 1rem; border-radius: 0.5rem; */
+  }
+  
