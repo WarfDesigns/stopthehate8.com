@@ -101,8 +101,18 @@ h2 {
 }
 section p {
     margin-bottom: 1rem;
-    text-align: center;
-    max-width: 600px;
+    text-align: left;
+    max-width: 1300px;
+}
+.bolden {
+    font-weight: bolder;
+    color: black;
+    font-size: 4.5rem;
+}
+.med-bolden {
+    font-weight: bolder;
+    color: black;
+    font-size: 2.5rem;
 }
 footer {
     background-color: #003744!important;
@@ -127,4 +137,13 @@ a:hover {
     color: green;
     font-size: 1rem;
     font-weight: bolder;
+}
+.one-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    padding: 4rem 0rem;
+    background-color: white;
+    color: black;
+    margin: 0;
 }
