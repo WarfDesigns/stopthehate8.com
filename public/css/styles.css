@@ -44,9 +44,8 @@ main {
 .two-column {    
     width: auto;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
     padding: 4rem 1rem;
     background-color: #006278!important;
     color: white
