@@ -1,0 +1,16 @@
+/*Does not include image gallery styles. Refer to image-gallery.css for the styles on mobile and desktop.*/
+
+h2 {
+    font-size: 2.5rem;
+    padding: 0 4rem 0rem 0rem;
+    align-items: center;
+}
+.two-column {    
+    width: auto;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+    background-color: #006278!important;
+    color: white
+}
