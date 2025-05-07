@@ -80,4 +80,25 @@ nav ul li a:hover {
     margin: 0;
     padding-bottom: 5%;
 }
+.normal-black {
+    color: black;
+    font-size: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.normal-white {
+    color: white;
+    font-size: 1rem;
+    padding: 0 4rem 0rem 0rem;
+}
+.bolden {
+    font-weight: bolder;
+    color: black;
+    font-size: 2.5rem;
+}
+.med-bolden {
+    font-weight: bolder;
+    color: black;
+    font-size: 1.5rem;
+}
 }
