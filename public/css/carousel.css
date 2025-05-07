@@ -1,23 +1,21 @@
 .carousel {
     position: relative;
-    overflow: hidden;       /* keep everything clipped to the carousel box */
+    overflow: hidden;       
     width: 100%;
-    height: 400px;          /* or whatever height you need */
+    height: 400px;         
   }
   
-  /* this wrapper is what you slide left/right in JS or via CSS animation */
+
   .slides-wrapper {
     display: flex;
     height: 100%;
-    /* this is what makes the movement smooth */
     transition: transform 4.6s ease-in-out;
     will-change: transform;
   }
   
   
-  /* each slide fills the carousel box */
   .slide {
-    flex: 0 0 100%;         /* one slide per view */
+    flex: 0 0 100%;       
     height: 100%;
   }
   
@@ -27,15 +25,14 @@
     object-fit: cover;
   }
   
-  /* the fixed overlay */
   .overlay {
     display: grid;
     justify-items: stretch;
     position: absolute;
-    top: 50%;               /* center vertically */
-    left: 50%;              /* center horizontally */
+    top: 50%;             
+    left: 50%;              
     transform: translate(-50%, -50%);
-    z-index: 10;            /* sit above all slides */
+    z-index: 10;           
     text-align: center;
     color: white;
     pointer-events: none;
@@ -43,8 +40,5 @@
     width: 100%;
     height: 95%;
     place-items: center; 
-    /* clicks go through to controls if any */
-    /* optional background for readability: */
-    /* background: rgba(0,0,0,0.5); padding: 1rem; border-radius: 0.5rem; */
   }
   

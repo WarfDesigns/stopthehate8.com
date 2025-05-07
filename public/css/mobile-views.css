@@ -1,4 +1,5 @@
 /*Does not include image gallery styles. Refer to image-gallery.css for the styles on mobile and desktop.*/
+@media screen and (max-width: 800px) { 
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -13,6 +14,18 @@ body {
 h2 {
     font-size: 2.5rem;
     padding: 0 4rem 0rem 0rem;
+    align-items: center;
+}
+footer {
+    background-color: #003744!important;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
     align-items: center;
 }
 .two-column {    
@@ -52,4 +65,14 @@ nav ul li a:hover {
     color: green;
     font-size: 1rem;
     font-weight: bolder;
+}
+.one-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding-bottom: 5%;
+}
 }

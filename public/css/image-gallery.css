@@ -25,7 +25,7 @@
     }
 }
 
-    @media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .column {
         flex: 100%;
         max-width: 100%;

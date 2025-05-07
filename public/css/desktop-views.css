@@ -1,6 +1,6 @@
 /*Does not include image gallery styles. Refer to image-gallery.css for the styles on mobile and desktop.*/
 
-@media screen and (min-width: 768px) {   
+@media screen and (min-width: 800px) {   
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
