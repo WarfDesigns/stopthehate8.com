@@ -3,7 +3,3 @@
 @import url(image-gallery.css);
 @import url(mobile-views.css);
 /*/Kept it organized above. Add more below to test your style changes if needed./*/
-.normal-black {
-    padding-left: 5%;
-    padding-right: 5%;
-}
