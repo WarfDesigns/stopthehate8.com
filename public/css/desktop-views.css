@@ -102,7 +102,7 @@ h1 {
     text-align: left;
 }
 h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     padding: 0 4rem 0rem 0rem;
     color: white;
 }
@@ -157,7 +157,8 @@ a:hover {
 .normal-white {
     color: white;
     font-size: 1rem;
-    padding: 0 4rem 0rem 0rem;
+    align-self: center;
+    
 }
 .normal-black {
     color: black;
