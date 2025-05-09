@@ -1,5 +1,5 @@
 /*Does not include image gallery styles. Refer to image-gallery.css for the styles on mobile and desktop.*/
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 799px) { 
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
