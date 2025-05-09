@@ -33,6 +33,9 @@ footer {
     justify-content: center;
     align-items: center;
 }
+footer.a {
+    color: white;
+}
 .two-column {    
     width: auto;
     display: grid;
@@ -41,6 +44,9 @@ footer {
     padding: 4rem 1rem;
     background-color: #006278!important;
     color: white
+}
+a {
+    text-decoration: none;
 }
 header {
     background-color: #003744!important;
