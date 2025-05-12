@@ -1,6 +1,6 @@
-@import url(carousel.css);
-@import url(mobile-views.css);
-@import url(desktop-views.css);
-@import url(image-gallery.css);
+@import url(/public/css/carousel.css);
+@import url(/public/css/mobile-views.css);
+@import url(/public/css/desktop-views.css);
+@import url(/public/css/image-gallery.css);
 
 /*/Kept it organized above. Add more below to test your style changes if needed./*/

@@ -1,17 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const wrapper = document.querySelector('.slides-wrapper');
-  const slideCount = wrapper.children.length;
-  let index = 0;
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".carousel .slide");
+  let current = 0;
 
-  function goToSlide(i) {
-    wrapper.style.transform = `translateX(-${i * 100}%)`;
-  }
-
-  // advance every 5s
   setInterval(() => {
-index = (index + 1) % slideCount;
-goToSlide(index);
-    // for debugging, open your console and uncomment:
-    // console.log('auto-advance to slide', index);
-  }, 10000);
+    // fade out current
+    slides[current].classList.remove("active");
+    // advance index
+    current = (current + 1) % slides.length;
+    // fade in next
+    slides[current].classList.add("active");
+  }, 5000);  // change every 5 seconds (adjust as you like)
 });
