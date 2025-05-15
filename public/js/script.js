@@ -1,14 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const imgs     = document.querySelectorAll('.carousel .slides img');
-    let   current  = 0;
-    const delay    = 5000;  // time between fades (ms)
+  document.addEventListener('DOMContentLoaded', () => {
+    const slides  = document.querySelectorAll('.carousel .slide');
+    let   current = 0;
+    const delay   = 5000; // ms between fades
 
-    // initialize
-    imgs[current].classList.add('active');
+    // start on first slide
+    slides[current].classList.add('active');
 
     setInterval(() => {
-      imgs[current].classList.remove('active');
-      current = (current + 1) % imgs.length;
-      imgs[current].classList.add('active');
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
     }, delay);
   });
