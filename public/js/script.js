@@ -1,13 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelectorAll(".carousel .slide");
-  let current = 0;
+document.addEventListener('DOMContentLoaded', () => {
+    const imgs     = document.querySelectorAll('.carousel .slides img');
+    let   current  = 0;
+    const delay    = 5000;  // time between fades (ms)
 
-  setInterval(() => {
-    // fade out current
-    slides[current].classList.remove("active");
-    // advance index
-    current = (current + 1) % slides.length;
-    // fade in next
-    slides[current].classList.add("active");
-  }, 5000);  // change every 5 seconds (adjust as you like)
-});
+    // initialize
+    imgs[current].classList.add('active');
+
+    setInterval(() => {
+      imgs[current].classList.remove('active');
+      current = (current + 1) % imgs.length;
+      imgs[current].classList.add('active');
+    }, delay);
+  });
